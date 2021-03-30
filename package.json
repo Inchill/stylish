@@ -1,0 +1,44 @@
+{
+  "name": "stylish",
+  "version": "1.0.0",
+  "description": "基于 stylus 书写的常用 UI 组件库",
+  "main": "main.ts",
+  "scripts": {
+    "test": "jest",
+    "dev": "webpack serve --config ./build/webpack.dev.js",
+    "build": "webpack --config ./build/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inchill/stylish.git"
+  },
+  "keywords": [
+    "stylus",
+    "vue"
+  ],
+  "author": "Inchill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Inchill/stylish/issues"
+  },
+  "homepage": "https://github.com/Inchill/stylish#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "@vue/compiler-sfc": "^3.0.9",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.2.0",
+    "eslint": "^7.23.0",
+    "eslint-plugin-vue": "^7.8.0",
+    "html-webpack-plugin": "^5.3.1",
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.3",
+    "vue": "^3.0.9",
+    "vue-loader": "^16.2.0",
+    "vue-router": "^4.0.5",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
+}
