@@ -16,6 +16,10 @@ module.exports = {
       {
         test: /\.ts$/,
         use: ['ts-loader']
+      },
+      {
+        test: /\.styl(us)$/,
+        use: ['style-loader', 'css-loader', 'stylus-loader']
       }
     ]
   },
