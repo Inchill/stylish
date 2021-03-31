@@ -20,6 +20,10 @@ module.exports = {
       {
         test: /\.styl(us)$/,
         use: ['style-loader', 'css-loader', 'stylus-loader']
+      },
+      {
+        test: /\.(svg|jpg|png)$/,
+        use: ['url-loader']
       }
     ]
   },

@@ -1,6 +1,11 @@
 <template>
   <div id="home-page">
-    <st-progress></st-progress>
+    <!-- <div class="component-item">
+      <st-progress></st-progress>
+    </div> -->
+    <div class="component-item">
+      <popup></popup>
+    </div>
   </div>
 </template>
 
@@ -8,7 +13,11 @@
 import { defineComponent, defineAsyncComponent } from 'vue'
 export default defineComponent({
   components: {
-    StProgress: defineAsyncComponent(() => import('@/components/progress/index.vue'))
+    StProgress: defineAsyncComponent(() => import('@/components/progress/index.vue')),
+    Popup: defineAsyncComponent(() => import('@/components/popup/index.vue'))
+  },
+  setup () {
+    return {}
   }
 })
 </script>
@@ -17,4 +26,8 @@ export default defineComponent({
 #home-page
   width 50%
   height 100%
+.component-item
+  width 100%
+  height 100px
+  margin 10px 0
 </style>
